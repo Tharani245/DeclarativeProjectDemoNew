@@ -1,0 +1,31 @@
+node
+{
+    stage('Configuration Management')
+    {
+        echo "This is Configuration Management using Ansible.................."
+    }	
+    stage('Commit')
+    {
+        echo "This is Code Download from GIT Project Repository.................."
+    }
+    stage('Build')
+    {
+        echo "This is Build project using maven.................."
+    }
+     stage('Quality Assurance')
+    {
+        echo "This is Quality Assurance Project using Sonar Qube.................."
+    }	
+    stage('Test')
+    {
+        echo "This is Test project Implementation using Selenium................."
+    }
+    stage('Release')
+    {
+        echo "This is Delivery using Kuberbetis......................................"
+    }
+    stage('Monitor')
+    {
+        echo "This is Application Logs Monitorinig using tool Splunk............."
+    }
+}
